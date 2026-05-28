@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Wedding Of Fajar & Khori</title>
 
-  <!-- FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
 
-  <!-- SWIPER -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link rel="stylesheet" href="style.css">
+<title>The Wedding Of Fajar & Khori</title>
+
+<!-- FONT -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- SWIPER -->
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -24,241 +34,288 @@
 
 <div id="loading">
 
-  <div class="loader-circle"></div>
+<div class="loader"></div>
 
-  <div class="loading-text">
-    LOADING INVITATION
-  </div>
+<p>Loading Invitation...</p>
 
 </div>
 
 <!-- MUSIC -->
 
 <audio id="music" loop>
-  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8d4f61e89.mp3?filename=wedding-110624.mp3">
+
+<source src="assets/music/wedding.mp3">
+
 </audio>
+
+<!-- CURSOR -->
+
+<div class="cursor-glow"></div>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h1>F | K</h1>
+
+<ul>
+
+<li><a href="#home">HOME</a></li>
+
+<li><a href="#couple">COUPLE</a></li>
+
+<li><a href="#story">STORY</a></li>
+
+<li><a href="#event">EVENT</a></li>
+
+<li><a href="#gallery">GALLERY</a></li>
+
+<li><a href="#gift">GIFT</a></li>
+
+<li><a href="#rsvp">RSVP</a></li>
+
+</ul>
+
+</div>
 
 <!-- OPENING -->
 
 <div id="opening">
 
-  <div class="opening-box">
+<div class="opening-content">
 
-    <h3>THE WEDDING OF</h3>
+<h5>THE WEDDING OF</h5>
 
-    <h1>
-      Fajar <br>&<br> Khori
-    </h1>
+<h1>Fajar & Khori</h1>
 
-    <p id="guest">
-      Kepada Tamu Undangan
-    </p>
+<p id="guest">
+Kepada Tamu Undangan
+</p>
 
-    <div class="envelope">
-      <div class="envelope-back"></div>
-      <div class="envelope-front"></div>
-    </div>
+<button onclick="openInvitation()">
 
-    <button class="open-btn" onclick="openInvitation()">
-      Buka Undangan
-    </button>
+Buka Undangan
 
-  </div>
+</button>
+
+</div>
 
 </div>
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero-premium" id="home">
 
-  <video autoplay muted loop playsinline>
-    <source src="https://cdn.coverr.co/videos/coverr-a-couple-in-love-1561577608219?download=1080p" type="video/mp4">
-  </video>
+<div class="hero-bg"></div>
 
-  <div class="hero-overlay"></div>
+<div class="moon-glow"></div>
 
-  <div class="hero-content">
+<div class="particles"></div>
 
-    <h4>21 NOVEMBER 2026</h4>
+<!-- CHARACTER -->
 
-    <h1>
-      Fajar & Khori
-    </h1>
+<div class="character left-character">
 
-    <p>
-      Together With Their Families
-    </p>
+<img src="assets/images/groom-anime.webp">
 
-  </div>
+</div>
+
+<div class="character right-character">
+
+<img src="assets/images/bride-anime.webp">
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="hero-center">
+
+<h5>
+THE WEDDING OF
+</h5>
+
+<h1>
+Fajar & Khori
+</h1>
+
+<div class="date-divider">
+
+<span></span>
+
+<p>21.11.2026</p>
+
+<span></span>
+
+</div>
+
+<div class="guest-box">
+
+<p>Kepada Yth.</p>
+
+<h3 id="guest-name">
+Tamu Undangan
+</h3>
+
+</div>
+
+<button onclick="openInvitation()">
+
+Buka Undangan
+
+</button>
+
+<div class="scroll-down">
+
+⌄
+
+</div>
+
+</div>
 
 </section>
 
 <!-- COUPLE -->
 
-<section class="fade">
+<section id="couple" class="fade">
 
-  <div class="subtitle">
-    THE COUPLE
-  </div>
+<div class="section-subtitle">
+THE COUPLE
+</div>
 
-  <div class="title">
-    Bride & Groom
-  </div>
+<div class="section-title">
+Bride & Groom
+</div>
 
-  <div class="couple">
+<div class="couple-wrapper">
 
-    <div class="person glass">
+<div class="couple-card glass">
 
-      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop">
+<img src="assets/images/groom-anime.webp">
 
-      <h2>Fajar</h2>
+<h2>Fajar</h2>
 
-      <p>
-        Putra Pertama dari <br>
-        Bapak Ahmad & Ibu Siti
-      </p>
+<p>
+Putra Pertama dari <br>
+Bapak Ahmad & Ibu Siti
+</p>
 
-    </div>
+</div>
 
-    <div class="person glass">
+<div class="middle-love">
+&
+</div>
 
-      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop">
+<div class="couple-card glass">
 
-      <h2>Khori</h2>
+<img src="assets/images/bride-anime.webp">
 
-      <p>
-        Putri Kedua dari <br>
-        Bapak Hidayat & Ibu Rina
-      </p>
+<h2>Khori</h2>
 
-    </div>
+<p>
+Putri Kedua dari <br>
+Bapak Hidayat & Ibu Rina
+</p>
 
-  </div>
+</div>
 
-</section>
-
-<!-- LOVE STORY -->
-
-<section class="fade">
-
-  <div class="subtitle">
-    OUR STORY
-  </div>
-
-  <div class="title">
-    Love Story
-  </div>
-
-  <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="timeline-content glass">
-        <h3>2022</h3>
-        <p>
-          Pertama kali bertemu dan mulai mengenal satu sama lain.
-        </p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-content glass">
-        <h3>2024</h3>
-        <p>
-          Menjalin hubungan serius dan mempertemukan keluarga.
-        </p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-content glass">
-        <h3>2026</h3>
-        <p>
-          Memutuskan untuk melangkah menuju pernikahan.
-        </p>
-      </div>
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<!-- GALLERY -->
+<!-- STORY -->
 
-<section class="fade">
+<section id="story" class="fade">
 
-  <div class="subtitle">
-    PREWEDDING
-  </div>
+<div class="section-subtitle">
+OUR LOVE STORY
+</div>
 
-  <div class="title">
-    Gallery
-  </div>
+<div class="section-title">
+Perjalanan Cinta
+</div>
 
-  <div class="swiper mySwiper">
+<div class="timeline">
 
-    <div class="swiper-wrapper">
+<div class="timeline-item glass">
 
-      <div class="swiper-slide">
-        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop">
-      </div>
+<h3>2022</h3>
 
-      <div class="swiper-slide">
-        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop">
-      </div>
+<p>
+Pertama kali bertemu dan mulai mengenal.
+</p>
 
-      <div class="swiper-slide">
-        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop">
-      </div>
+</div>
 
-    </div>
+<div class="timeline-item glass">
 
-  </div>
+<h3>2024</h3>
+
+<p>
+Mulai menjalin hubungan serius.
+</p>
+
+</div>
+
+<div class="timeline-item glass">
+
+<h3>2026</h3>
+
+<p>
+Menuju pernikahan suci.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- EVENT -->
 
-<section class="fade">
+<section id="event" class="fade">
 
-  <div class="subtitle">
-    WEDDING EVENT
-  </div>
+<div class="section-subtitle">
+WEDDING EVENT
+</div>
 
-  <div class="title">
-    Save The Date
-  </div>
+<div class="section-title">
+Save The Date
+</div>
 
-  <div class="events">
+<div class="event-wrapper">
 
-    <div class="event-card glass">
+<div class="event-card glass">
 
-      <h2>Akad Nikah</h2>
+<h2>Akad Nikah</h2>
 
-      <p>
-        Jumat <br><br>
-        20 November 2026 <br><br>
-        Di Kediaman Wanita
-      </p>
+<p>Jumat, 20 November 2026</p>
 
-    </div>
+<p>09.00 WIB</p>
 
-    <div class="event-card glass">
+<p>Di Kediaman Wanita</p>
 
-      <h2>Resepsi</h2>
+</div>
 
-      <p>
-        Sabtu, 21 November 2026 <br><br>
-        10.00 WIB - Selesai <br><br>
-        Jl Mangga No 94A Gang 2 Wage Taman Sidoarjo
-      </p>
+<div class="event-card glass">
 
-      <a href="https://maps.google.com" target="_blank" class="btn">
-        Google Maps
-      </a>
+<h2>Resepsi</h2>
 
-    </div>
+<p>Sabtu, 21 November 2026</p>
 
-  </div>
+<p>10.00 WIB - Selesai</p>
+
+<p>
+Jl Mangga No 94A Gang 2
+Wage Taman Sidoarjo
+</p>
+
+<a href="#">
+Lihat Maps
+</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -266,87 +323,169 @@
 
 <section class="fade">
 
-  <div class="subtitle">
-    COUNTDOWN
-  </div>
+<div class="section-subtitle">
+COUNTDOWN
+</div>
 
-  <div class="title">
-    Wedding Day
-  </div>
+<div class="section-title">
+Hari Bahagia
+</div>
 
-  <div class="countdown">
+<div class="countdown">
 
-    <div class="box glass">
-      <h1 id="days">00</h1>
-      <span>Hari</span>
-    </div>
+<div class="count-box glass">
 
-    <div class="box glass">
-      <h1 id="hours">00</h1>
-      <span>Jam</span>
-    </div>
+<h1 id="days">00</h1>
 
-    <div class="box glass">
-      <h1 id="minutes">00</h1>
-      <span>Menit</span>
-    </div>
+<span>Hari</span>
 
-    <div class="box glass">
-      <h1 id="seconds">00</h1>
-      <span>Detik</span>
-    </div>
+</div>
 
-  </div>
+<div class="count-box glass">
+
+<h1 id="hours">00</h1>
+
+<span>Jam</span>
+
+</div>
+
+<div class="count-box glass">
+
+<h1 id="minutes">00</h1>
+
+<span>Menit</span>
+
+</div>
+
+<div class="count-box glass">
+
+<h1 id="seconds">00</h1>
+
+<span>Detik</span>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- QRIS -->
+<!-- GALLERY -->
 
-<section class="fade">
+<section id="gallery" class="fade">
 
-  <div class="subtitle">
-    DIGITAL GIFT
-  </div>
+<div class="section-subtitle">
+PREWEDDING
+</div>
 
-  <div class="title">
-    Amplop Digital
-  </div>
+<div class="section-title">
+Gallery
+</div>
 
-  <div class="qris glass">
+<div class="swiper mySwiper">
 
-    <p>
-      Doa Restu Anda Merupakan Karunia Yang Sangat Berarti Bagi Kami.
-    </p>
+<div class="swiper-wrapper">
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/QR_Code_Example.svg">
+<div class="swiper-slide">
 
-  </div>
+<img src="assets/images/gallery1.webp">
+
+</div>
+
+<div class="swiper-slide">
+
+<img src="assets/images/gallery2.webp">
+
+</div>
+
+<div class="swiper-slide">
+
+<img src="assets/images/gallery3.webp">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GIFT -->
+
+<section id="gift" class="fade">
+
+<div class="section-subtitle">
+DIGITAL GIFT
+</div>
+
+<div class="section-title">
+Amplop Digital
+</div>
+
+<div class="gift-box glass">
+
+<img src="assets/images/qris.webp">
+
+<div class="rekening">
+
+<h3>BCA</h3>
+
+<p>1234567890</p>
+
+<button onclick="copyRek()">
+Salin Rekening
+</button>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- RSVP -->
 
-<section class="fade">
+<section id="rsvp" class="fade">
 
-  <div class="subtitle">
-    RSVP
-  </div>
+<div class="section-subtitle">
+RSVP
+</div>
 
-  <div class="title">
-    Ucapan & Kehadiran
-  </div>
+<div class="section-title">
+Ucapan Tamu
+</div>
 
-  <form class="glass">
+<form class="glass">
 
-    <input type="text" placeholder="Nama">
+<input type="text" placeholder="Nama">
 
-    <textarea placeholder="Tulis ucapan terbaik..."></textarea>
+<textarea placeholder="Ucapan & Doa"></textarea>
 
-    <button type="submit">
-      Kirim Ucapan
-    </button>
+<button type="submit">
 
-  </form>
+Kirim Ucapan
+
+</button>
+
+</form>
+
+<div id="wishes">
+
+<div class="wish-card glass">
+
+<img src="assets/images/avatar.webp">
+
+<div>
+
+<h3>Siti Aminah</h3>
+
+<p>
+Semoga lancar sampai hari H 🤍
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -354,31 +493,34 @@
 
 <footer>
 
-  <h1>
-    Thank You
-  </h1>
+<h1>
+Thank You
+</h1>
 
-  <p>
-    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan doa restu kepada kedua mempelai.
-  </p>
+<p>
+Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.
+</p>
 
-  <br><br>
-
-  <h2>
-    Fajar & Khori
-  </h2>
+<h2>
+Fajar & Khori
+</h2>
 
 </footer>
 
-<!-- SWIPER -->
+<!-- SCRIPT -->
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- CONFETTI -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
-
-
