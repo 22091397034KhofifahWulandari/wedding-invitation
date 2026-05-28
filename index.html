@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Wedding Of Fajar & Khori</title>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- SWIPER -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOADING -->
+
+<div id="loading">
+
+  <div class="loader-circle"></div>
+
+  <div class="loading-text">
+    LOADING INVITATION
+  </div>
+
+</div>
+
+<!-- MUSIC -->
+
+<audio id="music" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8d4f61e89.mp3?filename=wedding-110624.mp3">
+</audio>
+
+<!-- OPENING -->
+
+<div id="opening">
+
+  <div class="opening-box">
+
+    <h3>THE WEDDING OF</h3>
+
+    <h1>
+      Fajar <br>&<br> Khori
+    </h1>
+
+    <p id="guest">
+      Kepada Tamu Undangan
+    </p>
+
+    <div class="envelope">
+      <div class="envelope-back"></div>
+      <div class="envelope-front"></div>
+    </div>
+
+    <button class="open-btn" onclick="openInvitation()">
+      Buka Undangan
+    </button>
+
+  </div>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <video autoplay muted loop playsinline>
+    <source src="https://cdn.coverr.co/videos/coverr-a-couple-in-love-1561577608219?download=1080p" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <h4>21 NOVEMBER 2026</h4>
+
+    <h1>
+      Fajar & Khori
+    </h1>
+
+    <p>
+      Together With Their Families
+    </p>
+
+  </div>
+
+</section>
+
+<!-- COUPLE -->
+
+<section class="fade">
+
+  <div class="subtitle">
+    THE COUPLE
+  </div>
+
+  <div class="title">
+    Bride & Groom
+  </div>
+
+  <div class="couple">
+
+    <div class="person glass">
+
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop">
+
+      <h2>Fajar</h2>
+
+      <p>
+        Putra Pertama dari <br>
+        Bapak Ahmad & Ibu Siti
+      </p>
+
+    </div>
+
+    <div class="person glass">
+
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop">
+
+      <h2>Khori</h2>
+
+      <p>
+        Putri Kedua dari <br>
+        Bapak Hidayat & Ibu Rina
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- LOVE STORY -->
+
+<section class="fade">
+
+  <div class="subtitle">
+    OUR STORY
+  </div>
+
+  <div class="title">
+    Love Story
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-content glass">
+        <h3>2022</h3>
+        <p>
+          Pertama kali bertemu dan mulai mengenal satu sama lain.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content glass">
+        <h3>2024</h3>
+        <p>
+          Menjalin hubungan serius dan mempertemukan keluarga.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content glass">
+        <h3>2026</h3>
+        <p>
+          Memutuskan untuk melangkah menuju pernikahan.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="fade">
+
+  <div class="subtitle">
+    PREWEDDING
+  </div>
+
+  <div class="title">
+    Gallery
+  </div>
+
+  <div class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EVENT -->
+
+<section class="fade">
+
+  <div class="subtitle">
+    WEDDING EVENT
+  </div>
+
+  <div class="title">
+    Save The Date
+  </div>
+
+  <div class="events">
+
+    <div class="event-card glass">
+
+      <h2>Akad Nikah</h2>
+
+      <p>
+        Jumat <br><br>
+        20 November 2026 <br><br>
+        Di Kediaman Wanita
+      </p>
+
+    </div>
+
+    <div class="event-card glass">
+
+      <h2>Resepsi</h2>
+
+      <p>
+        Sabtu, 21 November 2026 <br><br>
+        10.00 WIB - Selesai <br><br>
+        Jl Mangga No 94A Gang 2 Wage Taman Sidoarjo
+      </p>
+
+      <a href="https://maps.google.com" target="_blank" class="btn">
+        Google Maps
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+
+<section class="fade">
+
+  <div class="subtitle">
+    COUNTDOWN
+  </div>
+
+  <div class="title">
+    Wedding Day
+  </div>
+
+  <div class="countdown">
+
+    <div class="box glass">
+      <h1 id="days">00</h1>
+      <span>Hari</span>
+    </div>
+
+    <div class="box glass">
+      <h1 id="hours">00</h1>
+      <span>Jam</span>
+    </div>
+
+    <div class="box glass">
+      <h1 id="minutes">00</h1>
+      <span>Menit</span>
+    </div>
+
+    <div class="box glass">
+      <h1 id="seconds">00</h1>
+      <span>Detik</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- QRIS -->
+
+<section class="fade">
+
+  <div class="subtitle">
+    DIGITAL GIFT
+  </div>
+
+  <div class="title">
+    Amplop Digital
+  </div>
+
+  <div class="qris glass">
+
+    <p>
+      Doa Restu Anda Merupakan Karunia Yang Sangat Berarti Bagi Kami.
+    </p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/QR_Code_Example.svg">
+
+  </div>
+
+</section>
+
+<!-- RSVP -->
+
+<section class="fade">
+
+  <div class="subtitle">
+    RSVP
+  </div>
+
+  <div class="title">
+    Ucapan & Kehadiran
+  </div>
+
+  <form class="glass">
+
+    <input type="text" placeholder="Nama">
+
+    <textarea placeholder="Tulis ucapan terbaik..."></textarea>
+
+    <button type="submit">
+      Kirim Ucapan
+    </button>
+
+  </form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h1>
+    Thank You
+  </h1>
+
+  <p>
+    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan doa restu kepada kedua mempelai.
+  </p>
+
+  <br><br>
+
+  <h2>
+    Fajar & Khori
+  </h2>
+
+</footer>
+
+<!-- SWIPER -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- CONFETTI -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
