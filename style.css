@@ -1361,3 +1361,317 @@ opacity:1;
 transform:translateY(0);
 
 }
+/* =========================
+PREMIUM MOBILE HERO
+========================= */
+
+@media screen and (max-width:768px){
+
+/* SIDEBAR */
+
+.sidebar{
+display:none;
+}
+
+/* HERO */
+
+.hero-premium{
+
+padding-left:0;
+
+justify-content:center;
+align-items:center;
+
+height:100vh;
+
+background:
+
+linear-gradient(
+to bottom,
+rgba(2,6,23,.55),
+rgba(2,6,23,.88)
+),
+
+url('assets/images/bride-anime.webp')
+center center/cover no-repeat;
+
+}
+
+/* CHARACTER */
+
+.character{
+
+opacity:.22;
+
+filter:blur(1px);
+
+}
+
+.left-character{
+
+left:-45%;
+
+bottom:-20px;
+
+}
+
+.right-character{
+
+right:-45%;
+
+bottom:-20px;
+
+}
+
+/* CHARACTER IMAGE */
+
+.character img{
+
+height:75vh;
+
+}
+
+/* HERO CONTENT */
+
+.hero-center{
+
+width:100%;
+
+padding:20px;
+
+z-index:5;
+
+}
+
+/* TITLE */
+
+.hero-center h1{
+
+font-size:72px;
+
+line-height:.95;
+
+margin-bottom:20px;
+
+}
+
+/* SUBTITLE */
+
+.hero-center h5{
+
+font-size:11px;
+
+letter-spacing:5px;
+
+margin-bottom:15px;
+
+}
+
+/* DATE */
+
+.date-divider{
+
+margin-bottom:25px;
+
+}
+
+.date-divider p{
+
+font-size:20px;
+
+}
+
+.date-divider span{
+
+width:45px;
+
+}
+
+/* GUEST */
+
+.guest-box{
+
+margin-bottom:35px;
+
+}
+
+.guest-box h3{
+
+font-size:44px;
+
+}
+
+/* BUTTON */
+
+.hero-center button{
+
+padding:14px 28px;
+
+font-size:14px;
+
+}
+
+/* OPENING */
+
+.opening-content h1{
+
+font-size:62px;
+
+line-height:1;
+
+}
+
+.opening-content h5{
+
+font-size:11px;
+
+letter-spacing:5px;
+
+}
+
+.opening-content p{
+
+font-size:18px;
+
+}
+
+/* SECTION */
+
+section{
+
+padding:100px 20px;
+
+padding-left:20px;
+
+}
+
+/* TITLE */
+
+.section-title{
+
+font-size:50px;
+
+margin-bottom:50px;
+
+}
+
+/* GRID */
+
+.couple-wrapper,
+.timeline,
+.event-wrapper{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+/* LOVE */
+
+.middle-love{
+display:none;
+}
+
+/* CARD */
+
+.couple-card,
+.timeline-item,
+.event-card{
+
+padding:35px 25px;
+
+}
+
+/* IMAGE */
+
+.couple-card img{
+
+width:180px;
+height:180px;
+
+}
+
+/* COUNTDOWN */
+
+.countdown{
+
+gap:15px;
+
+}
+
+.count-box{
+
+width:100px;
+height:100px;
+
+}
+
+.count-box h1{
+
+font-size:30px;
+
+}
+
+/* GALLERY */
+
+.swiper-slide{
+
+height:250px;
+
+}
+
+/* GIFT */
+
+.gift-box{
+
+padding:30px 20px;
+
+gap:25px;
+
+}
+
+.gift-box img{
+
+width:100%;
+max-width:220px;
+
+}
+
+/* FORM */
+
+form{
+
+padding:30px 20px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+padding:100px 20px;
+
+padding-left:20px;
+
+}
+
+footer h1{
+
+font-size:55px;
+
+}
+
+footer h2{
+
+font-size:28px;
+
+}
+
+/* CURSOR */
+
+.cursor-glow{
+display:none;
+}
+
+}d
